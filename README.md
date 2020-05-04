@@ -12,3 +12,15 @@ $ npm install
 ```bash
 $ npm run dev
 ```
+
+## Unit Tests
+
+```bash
+$ npm run test
+```
+
+## Unit Test Coverage
+
+```bash
+$ npm run test:cov
+```
