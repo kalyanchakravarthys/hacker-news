@@ -1,7 +1,6 @@
 # Hacker News
 ### This is a clone of hacker news built with Next JS
 
-
 ## Installation
 
 ```bash
