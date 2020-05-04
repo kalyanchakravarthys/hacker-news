@@ -22,17 +22,16 @@ class index extends React.Component {
 
     render() {
         const { stories, statusCode, page } = this.props;
-        console.log(`Stories ${JSON.stringify(stories.hits)}`)
         if (statusCode) {
             return <Error statusCode={statusCode} />
         }
 
         return (
             <div>
-                <StoryList stories={stories.hits} />
+                <StoryList stories={stories ? stories.hits : []} />
                 <div>
                     <Link href={`/?page=${page + 1}`}><a>More</a></Link>
-                    <div Style="float:right;"> Page No: {page}</div>
+                    <div className="stories-page-no" Style="float:right;">Page No: {page}</div>
                 </div>
 
             </div>
