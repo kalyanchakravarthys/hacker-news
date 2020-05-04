@@ -1,0 +1,12 @@
+.story-list {
+    margin: 5px;
+}
+
+.story {
+    padding: 5px;
+}
+
+.story div {
+    padding: 2px;
+    float: left;
+}
