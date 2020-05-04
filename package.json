@@ -7,9 +7,9 @@
     "node": "12.13.1"
   },
   "scripts": {
-    "start": "next",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "heroku-postbuild": "next build"
   },
