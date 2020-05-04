@@ -7,6 +7,7 @@
     "node": "12.13.1"
   },
   "scripts": {
+    "start": "next",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
