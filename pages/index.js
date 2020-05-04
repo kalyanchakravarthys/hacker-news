@@ -1,5 +1,5 @@
 import fetch from "isomorphic-fetch";
-import Error from "next/Error";
+import Error from "next/error";
 import StoryList from "../components/stories"
 import Link from "next/link"
 
