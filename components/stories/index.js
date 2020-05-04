@@ -1,5 +1,4 @@
 import moment from 'moment';
-import Link from "next/Link";
 import StoriesHeader from "./header"
 
 export default ({ stories }) => {
