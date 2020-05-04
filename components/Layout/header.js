@@ -7,7 +7,7 @@ export default () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
-                    <NavDropdown title="menu" id="collapsable-nav-dropdown">
+                    <NavDropdown title="Menu" id="collapsable-nav-dropdown">
                         <NavDropdown.Item>Home</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item>About</NavDropdown.Item>
