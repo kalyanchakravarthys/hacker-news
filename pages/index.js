@@ -1,7 +1,7 @@
 import fetch from "isomorphic-fetch";
 import Error from "next/error";
-import StoryList from "../components/stories"
-import Link from "next/link"
+import Link from "next/link";
+import StoryList from "../components/stories";
 
 class index extends React.Component {
     static async getInitialProps({ req, res, query }) {
