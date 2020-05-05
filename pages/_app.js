@@ -1,9 +1,9 @@
-import React from 'react';
-import App, { Container } from 'next/app';
-import NextNprogress from 'nextjs-progressbar';
-import Layout from '../components/Layout';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import globalStyles from '../styles/global.js';
+import React from 'react'
+import App, { Container } from 'next/app'
+import NextNprogress from 'nextjs-progressbar'
+import Layout from '../components/Layout'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import globalStyles from '../styles/global.js'
 
 class MyApp extends App {
   render() {
