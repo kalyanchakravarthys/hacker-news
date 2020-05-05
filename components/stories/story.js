@@ -16,8 +16,8 @@ export default ({story}) => {
         setIsHidden(isHidden ? Boolean(isHidden): false)
     }, [objectID, isHidden])
 
-    return ((
-        <div key={objectID} className="story" Style={`display: ${isHidden ? 'none': 'flex'}`}>
+    return ((!isHidden &&
+        <div key={objectID} className="story">
             <div className="story-num-comments">{num_comments}</div>
             <Upvote id={objectID} votes={up_votes} />
             <div>{title}</div>
