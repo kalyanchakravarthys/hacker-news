@@ -43,6 +43,10 @@ export default css.global`
     .story:nth-child(odd) {
         background-color: #e6e6df;
     }
+
+    .story:hover {
+        background-color: #f2f2f2;
+    }
     
     .story div {
         padding: 2px;
@@ -65,6 +69,12 @@ export default css.global`
         font-size: 10px;
         line-height: 2;
         color: #828282;
+    }
+
+    .story-hide {
+        font-size: 10px;
+        line-height: 2;
+        cursor: pointer;
     }
     .votearrow {
         width:      10px;
