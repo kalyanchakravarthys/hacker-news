@@ -6,6 +6,10 @@ export default css.global`
         background: #f2f2f2 !important;
     }
 
+    .navbar {
+        padding: 0;
+    }
+
     .stories-header, .stories-footer {
         background: #e96429;
     }

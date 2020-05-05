@@ -29,7 +29,7 @@ export default ({ children }) => {
                 <Col xs lg="2">
 
                 </Col>
-                <Col md="auto"><Header /></Col>
+                <Col xs lg="8"><Header /></Col>
                 <Col xs lg="2">
 
                 </Col>
@@ -38,7 +38,7 @@ export default ({ children }) => {
                 <Col xs lg="2">
 
                 </Col>
-                <Col md="auto">{children}</Col>
+                <Col md="8">{children}</Col>
                 <Col xs lg="2">
 
                 </Col>
