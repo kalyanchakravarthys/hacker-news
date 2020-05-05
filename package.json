@@ -10,7 +10,7 @@
     "test": "jest --updateSnapshot",
     "test:watch": "jest --watch",
     "test:cov": "jest --updateSnapshot --coverage",
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "heroku-postbuild": "next build && npm run test:cov"

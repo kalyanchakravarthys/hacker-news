@@ -1,7 +1,7 @@
 import fetch from "isomorphic-fetch";
 import Error from "next/error";
-import Link from "next/link";
 import StoryList from "../components/stories";
+import {HACKER_NEWS_BASE_URL, HACKER_NEWS_ACTION} from "../config";
 
 class index extends React.Component {
     static async getInitialProps({ req, res, query }) {
@@ -10,7 +10,7 @@ class index extends React.Component {
         let page;
         try {
             page = Number(query.page) || 1;
-            const data = await fetch(`https://hn.algolia.com/api/v1/search?page=${page}`);
+            const data = await fetch(`${HACKER_NEWS_BASE_URL}${HACKER_NEWS_ACTION}?page=${page}`);
             stories = await data.json();
             // statusCode = data.status;
         } catch (e) {
