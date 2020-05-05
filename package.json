@@ -7,9 +7,9 @@
     "node": "12.13.1"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --updateSnapshot",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
+    "test:cov": "jest --updateSnapshot --coverage",
     "dev": "nodemon server.js",
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
