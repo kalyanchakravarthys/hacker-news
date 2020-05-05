@@ -6,7 +6,7 @@ export default css.global`
         background: #f2f2f2 !important;
     }
 
-    .stories-header {
+    .stories-header, .stories-footer {
         background: #e96429;
     }
 
