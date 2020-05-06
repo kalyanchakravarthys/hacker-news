@@ -5,7 +5,7 @@ const pageHeader = () => {
     <div>
       {
         <Navbar>
-          <Navbar.Brand href="/">PS-Tesco Assignment</Navbar.Brand>
+          <Navbar.Brand href="/"><h3>PS-Tesco Assignment</h3></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
