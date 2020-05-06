@@ -9,6 +9,8 @@ export default ({ children }) => {
         <title>Tesco Assignment</title>
         <link rel="manifest" href="/static/manifest.json" />
 
+        <meta name="description" content="This is a clone of Hacker News"></meta>
+        <meta name="robots" content="index, follow" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="hack-news" />
