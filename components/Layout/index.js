@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Header from './header'
 import { Container, Row, Col } from 'react-bootstrap'
 import NextNprogress from 'nextjs-progressbar'

@@ -1,6 +1,6 @@
 import React from 'react'
 import App from 'next/app'
-import Head from "next/head";
+import Head from 'next/head'
 import NextNprogress from 'nextjs-progressbar'
 import Layout from '../components/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
