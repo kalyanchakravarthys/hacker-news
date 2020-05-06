@@ -3,7 +3,7 @@ import css from 'styled-jsx/css'
 export default css.global`
     body {
         font-family: 'Verdana, Geneva, sans-serif';
-        background: #c4c4b4!important;
+        background: #f2f2f2 !important;
     }
 
     .navbar {
