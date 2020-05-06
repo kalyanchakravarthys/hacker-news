@@ -1,5 +1,6 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+import App from 'next/app'
+import Head from "next/head";
 import NextNprogress from 'nextjs-progressbar'
 import Layout from '../components/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -10,7 +11,10 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
+      <React.Fragment>
+        <Head>
+          <title>PS-Tesco Assignment</title>
+        </Head>
         <Layout>
           <Component {...pageProps} />
         </Layout>
@@ -23,7 +27,7 @@ class MyApp extends App {
         <style jsx global>
           {globalStyles}
         </style>
-      </Container>
+      </React.Fragment>
     )
   }
 }
