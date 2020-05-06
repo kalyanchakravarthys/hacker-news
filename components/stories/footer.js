@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default ({ page }) => {
+const footer = ({ page }) => {
   return (
     <div className="stories-footer">
       {page > 1 && (
@@ -22,3 +22,5 @@ export default ({ page }) => {
     </div>
   )
 }
+
+export default React.memo(footer)

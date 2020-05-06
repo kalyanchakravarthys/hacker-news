@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default () => {
+const storyHeader = () => {
   return (
     <div className="stories-header">
       <a href="https://news.ycombinator.com">
@@ -14,3 +14,5 @@ export default () => {
     </div>
   )
 }
+
+export default React.memo(storyHeader)

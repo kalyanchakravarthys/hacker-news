@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default ({ id, vote }) => {
+const upvote = ({ id, vote }) => {
   const [localVote, setLocalVote] = useState(vote ? Number(vote) : 0)
 
   useEffect(() => {
@@ -23,3 +23,5 @@ export default ({ id, vote }) => {
     </div>
   )
 }
+
+export default React.memo(upvote)
