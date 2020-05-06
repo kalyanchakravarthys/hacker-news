@@ -1,12 +1,13 @@
-// import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap'
 
-export default () => {
+const pageHeader = () => {
   return (
     <div>
-      {/* <Navbar>
-        <Navbar.Brand href="/">Tesco Assignment</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+      {
+        <Navbar>
+          <Navbar.Brand href="/">PS-Tesco Assignment</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <NavDropdown title="Menu" id="collapsable-nav-dropdown">
               <NavDropdown.Item>Home</NavDropdown.Item>
@@ -14,8 +15,11 @@ export default () => {
               <NavDropdown.Item>About</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
+        </Navbar.Collapse> */}
+        </Navbar>
+      }
     </div>
   )
 }
+
+export default React.memo(pageHeader)
