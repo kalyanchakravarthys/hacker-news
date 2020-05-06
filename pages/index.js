@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
 import StoryList from '../components/stories'
-import { HACKER_NEWS_BASE_URL, HACKER_NEWS_ACTION } from '../config'
+import { HACKER_NEWS_BASE_URL } from '../config'
 
 class index extends React.Component {
   static async getInitialProps({ query }) {
@@ -11,7 +11,7 @@ class index extends React.Component {
     try {
       page = Number(query.page) || 1
       const data = await fetch(
-        `${HACKER_NEWS_BASE_URL}${HACKER_NEWS_ACTION}?page=${page}`
+        `${HACKER_NEWS_BASE_URL}${query.sortName || 'search'}?page=${page}`
       )
       stories = await data.json()
       // statusCode = data.status;
